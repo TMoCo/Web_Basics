@@ -1,2 +1,5 @@
 # Web_Basics
-1st year module "Introduction to Web Technologies"
+
+The aim of this module was to create a basic website about a simple topic (my move from France to Leeds to study).
+
+
