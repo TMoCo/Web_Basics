@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styleSheet.css">
+    <meta charset="utf-8">
+    <title>About Me</title>
+  </head>
+  <body>
+
+    <h1 class="MHeaderAboutMe">ABOUT ME</h1>
+
+    <ul class="NavBar">
+      <li class="NavLi"><a class="active" href="aboutMe.html">About Me</a></li>
+      <li class="NavLi"><a href="beforeLeeds.html">Before Leeds</a></li>
+      <li class="NavLi"><a href="arrivingAtLeeds.html">Arriving At Leeds</a></li>
+      <li class="NavLi"><a href="CSAtTheUniversityOfLeeds.html">CS at the University of Leeds</a></li>
+      <li class="NavLi"><a href="futurePlans.html">What does the future hold?</a></li>
+      <li class="NavLi"><a href="welcome.html">Home Page</a></li>
+    </ul>
+
+    <h3>Who am I?</h3>
+
+    <p class="Content">
+      You might have stumbled upon this website inadvertidly and may not know who I am. This is problematic as this website
+      is entirely dedicated to my very self. Worry not as I am  about to reveal my identity: My name is Thomas, or Tommy as
+      I prefer to be nicknamed, Moreno-Cooper. The hyphen is very important. Born on the 30<sup>th</sup> of april 1999, I am the eldest son of a French
+      engineer and a british English teacher. By the way, I'm fluent in French and Enlish.
+    </p>
+
+    <h3>Where do I come from?</h3>
+
+    <p class="Content">
+      As you may have already seen on the Home page, I come from the South of France, near Marseille in fact. I've spent a total of 18 years in the south.
+      My education has taken me around the Cote Bleue, from Ensues-la-Redonne to Sausset-Les-Pins, and into Provence, culminating in Aix-en-Povence.
+    </p>
+
+    <div class="OuterMapOfHome">
+      <div id="Map" class="MapOfHome">
+        Uh-Oh, it would seem that Google Maps isn't working on your computer. Try going on the official google Maps
+        website <a href="https://www.google.co.uk/maps/place/162+Chemin+des+Besquens,+13820+Ensu%C3%A8s-la-Redonne,+France/@43.353909,5.1947821,17z/data=!3m1!4b1!4m5!3m4!1s0x12c9dd6fb4a8e79d:0xe6342564bea3edfc!8m2!3d43.3539051!4d5.1969708"> here</a>
+      </div>
+    </div>
+
+    <script>
+      function myMap() {
+        var myCenter = new google.maps.LatLng(43.353880, 5.197097);
+        var mapProperties= {
+        center: myCenter,
+        zoom: 11,
+        };
+        var map = new google.maps.Map(document.getElementById("Map"),mapProperties);
+        var marker = new google.maps.Marker({position:myCenter});
+        marker.setMap(map);
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkkwzRCq4xzD0WMUpQ67PxuL09DejLJvI&callback=myMap"></script>
+
+    <h3>What are my interests?</h3>
+
+    <p class="Content">
+      I have always had, and taken great pride in, my wide ranging interests. Whether it be music, literature, sciences, politics, history... You
+      name it, I probably know about it. But one of the things that has continually grabbed my attention since the fist time I encountered it is Video Games.
+      Even to this day I cannot pin point why they enthrall me so much, but I can guarantee that playing video games is the only things in which I will
+      for sure be able to sink hours of my time into.
+    </p>
+
+    <h3>Some things I like.</h3>
+
+    <p class="Content">
+      I like a lot of things: Ricky Gervais, Tchaikovsky, going out to the pub, writing progams, South Park, Star Wars<sup>tm</sup>... But one of the things I
+      really like to do at the moment is to loose myself on that great website YouTube, listening to some music. Holst's The Planets suite is so evocative to
+      me that it's my favorite piece of music, here is Jupiter the Bringer of Jollity.
+    </p>
+
+    <div class="iframe">
+      <iframe src="https://www.youtube.com/embed/Nz0b4STz1lo" align="center">
+        <p>Follow this link to listen to Holst on youtube: https://www.youtube.com/watch?v=Nz0b4STz1lo</p>
+      </iframe>
+    </div>
+
+    <div class="Contact">
+      <h2 class="ContactHead">Contact details:</h2>
+      <p class="ContactDetails">
+        Don't hesitate to drop me a line or a call.
+      </p>
+      <ul>
+        <li class="Contacts">Send me an email <a class="Email" href="mailto:sc17tm@leeds.ac.uk">here</a> or at sc17tm@leeds.ac.uk</li>
+        <li class="Contacts"> Call me at: +44 (0)7534 595460 <sub>(Very subject to availability)</sub></li>
+      </ul>
+        <p class="ContactDetails">The header picture is NOT my original work, it was taken from <a href="https://wallhere.com/en/wallpaper/820908">here</a></p>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styleSheet.css">
+    <meta charset="utf-8">
+    <title>Arriving at Leeds</title>
+  </head>
+  <body>
+
+    <h1 class="MHeaderArrivingAtLeeds">ARRIVING AT LEEDS</h1>
+
+    <ul class="NavBar">
+      <li class="NavLi"><a href="aboutMe.html">About Me</a></li>
+      <li class="NavLi"><a href="beforeLeeds.html">Before Leeds</a></li>
+      <li class="NavLi"><a class="active" href="arrivingAtLeeds.html">Arriving At Leeds</a></li>
+      <li class="NavLi"><a href="CSAtTheUniversityOfLeeds.html">CS at the University of Leeds</a></li>
+      <li class="NavLi"><a href="futurePlans.html">What does the future hold?</a></li>
+      <li class="NavLi"><a href="welcome.html">Home Page</a></li>
+    </ul>
+
+    <h3>Before my arrival.</h2>
+
+    <p class="Content">
+      Before actually moving to Leeds I had visited it over the holidays and immediately fell under its charm.
+      The arcades, the university... The city was such a clean and refreshing break from what I'd been used to before
+      that I was very excited at the prospect of living there for the next 4 years of my life.
+    </p>
+
+    <h3>Grayson heights, my first accomodation.</h3>
+
+    <p class="Content">
+      Moving into Grayson Heights was quite intimidating. If you go on the
+      <a href="https://accommodation.leeds.ac.uk/residence/37/grayson-heights">University Of Leeds accomodation website</a>,
+      you can see it for yourself. To be frank, I hated my time at Grayson Heights. My fresher's week hadn't gone
+      really well at all, my flatmates weren't really friendly and the distance from Univserity combined to make me feel isolated and
+      unhappy. My first month at Leeds was very unpleasant. Luckily by early October, I was finally able to apply for a different
+      accomodation.
+    </p>
+
+    <h3>My succesful move to The Tannery.</h3>
+
+    <p class="Content">
+      I had already been in contact with my personal tutor and had already queried the Accomodation office about procedures and
+      applications for moving. My case was streamlined through and I was assigned a new home: The Tannery. My uncle came up to help
+      me move in his little grey car. Here are some pictures of the move:
+    </p>
+
+
+    <div class="slideshow">
+      <div class="slide">
+        <img class="move" src="Moving1.jpg" alt="Me moving from Grayson Heights (before car)">
+      </div>
+      <div class="slide">
+        <img class="move" src="Moving2.jpg" alt="Me moving from Grayson Heights (in car)">
+      </div>
+      <div class="slide">
+        <img class="move" src="moving3.jpg" alt="Me moving from Grayson Heights (packing undies)">
+      </div>
+      <div class="slide">
+        <img class="move" src="moving4.jpg" alt="Me moving from Grayson Heights (new kitchen!)">
+      </div>
+      <span class="prev">
+        <button class="prev" onclick="prevOrNextSlide(-1)">prev slide</button>
+      </span>
+      <span class="next">
+        <button class="next" onclick="prevOrNextSlide(1)">next slide</button>
+      </span>
+
+    </div>
+
+    <script>
+      var indexCount = 1;
+      displaySlide(indexCount);
+
+      function displaySlide (k) {
+        var slides = document.getElementsByClassName("slide");
+        if (k > slides.length) {
+          indexCount = 1;
+        }
+        if (k < 1) {
+           indexCount = slides.length;
+        }
+        for (var count = 0; count < slides.length; count++) {
+          slides[count].style.display = "none";
+        }
+        slides[indexCount-1].style.display = "block";
+      }
+
+      function prevOrNextSlide(k) {
+        displaySlide(indexCount += k);
+      }
+    </script>
+
+    <p class="Content">
+      As you can probably tell by my stupid grin, I was very happy to be away. Here's an anecdote. A few days before actually moving,
+       I met a person called Matt in the School of Computing Long Room. We started chatting and the topic of accomodation came up,
+      as is customary in the first weeks of Uni. Matt told me one of his flatmates had just left and that a spare room had become
+      available. He then told me he lived in the Tannery in flat 315A which by sheer coincidence was where I was moving to!
+      I'm now very happy with my current situation, having made plenty of friends from many different backgrounds.
+    </p>
+
+
+    <div class="Contact">
+      <h2 class="ContactHead">Contact details:</h2>
+      <p class="ContactDetails">
+        Don't hesitate to drop me a line or a call.
+      </p>
+      <ul>
+        <li class="Contacts">Send me an email <a class="Email" href="mailto:sc17tm@leeds.ac.uk">here</a> or at sc17tm@leeds.ac.uk</li>
+        <li class="Contacts"> Call me at: +44 (0)7534 595460 <sub>(Very subject to availability)</sub></li>
+      </ul>
+      <p class="ContactDetails">The header picture is NOT my original work, it was taken from <a href="https://www.flickr.com/photos/atoach/5051855553/in/photolist-8Gq5DP-RpM83a-RnaPeC-a7XQVW-RpM1ng-Uw5CWT-D5P4D-Rn9wzN-bm7hoH-SDMcxH-fLuhkT-dugsr6-7kfsnS-Wam6mQ-SDLd7v-hTZeg7-UaLCHo-Z6ku31-dK7unM-SA78p9-6tTcp8-Rn9NvL-RpNtq2-pGZnJ7-AW4mU9-mL57FM-3eFsop-icLQji-XZvGpS-edZ654-bqUqWJ-pFEK9e-227p3QY-4NuejB-SA6nsG-ac2N2C-dyMLdP-5gJB6P-bsLRKB-9VxxM9-cXwi5m-i4oXBD-6tXkMC-mL6UtY-66V2vH-edXZQK-bm7hTT-bo3EGH-oUgfN1-a91bou">here</a></p>
+    </div>
+
+  </body>
+</html>

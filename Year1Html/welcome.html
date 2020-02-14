@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styleSheet.css">
+    <meta charset="utf-8">
+    <title>Welcome Home page</title>
+  </head>
+  <body>
+
+    <h1 class="MHeaderWelcome">WELCOME</h1>
+
+    <ul class="NavBar">
+      <li class="NavLi"><a href="aboutMe.html">About Me</a></li>
+      <li class="NavLi"><a href="beforeLeeds.html">Before Leeds</a></li>
+      <li class="NavLi"><a href="arrivingAtLeeds.html">Arriving At Leeds</a></li>
+      <li class="NavLi"><a href="CSAtTheUniversityOfLeeds.html">CS at the University of Leeds</a></li>
+      <li class="NavLi"><a href="futurePlans.html">What does the future hold?</a></li>
+      <li class="NavLi"><a class="active" href="welcome.html">Home Page</a></li>
+    </ul>
+
+    <p id="greetings" class="Content"></p>
+
+    <script>
+
+      function greet() {
+        var userDate = new Date();
+        var x = userDate.getHours();
+        if ((0 <= x) && (x < 12)) {
+          document.getElementById("greetings").innerHTML = "Good Morning!";
+        }
+        else if ((12 <= x) &&  (x < 19)) {
+          document.getElementById("greetings").innerHTML = "Good Afternoon!";
+        }
+        else {
+          document.getElementById("greetings").innerHTML = "Good Evening!";
+        }
+      }
+
+      greet();
+
+    </script>
+
+    <p class="Content">
+      Welcome to my very first website. The contents of this website are going to revolve solely around myself,
+      partly because I can't believe there still isn't a wikipedia page dedicated to me. The main focus however will be on my
+      move from the beautiful south of France, to the equally beautiful South-West of Yorkshire to study computer science at the
+      <em>University of leeds</em>.
+    </p>
+
+    <img class="ProfilePic" src="Profile.jpg" alt="A rather handsome chap">
+
+    <p class="Cheers">
+      <em>Cheers!</em>
+    </p>
+
+    <div class="Contact">
+      <h2 class="ContactHead">Contact details:</h2>
+      <p class="ContactDetails">
+        Don't hesitate to drop me a line or a call.
+      </p>
+      <ul>
+        <li class="Contacts">Send me an email <a class="Email" href="mailto:sc17tm@leeds.ac.uk">here</a> or at sc17tm@leeds.ac.uk</li>
+        <li class="Contacts"> Call me at: +44 (0)7534 595460 <sub>(Very subject to availability)</sub></li>
+      </ul>
+      <p class="ContactDetails">The header picture is NOT my original work, it was taken from <a href="https://www.flickr.com/photos/140081588@N04/35591201421/in/photolist-We5dcP-8k6c2A-Vc8hcD-8SQdKZ-7X7AsE-7ZPDSD-8FSGqN-7WE1Sw-Vc7PaT-7UuNym-7UryBa-Vc8m4r-83qRTZ-8UFmmA-85ZA6W-V9iEVo-8Fffn5-7X7Mcj-8arPbS-8exNaF-dbveAg-8aEAig-VQqsEo-bqRYwJ-8dirck-bqcMUe-86drqH-81oHsx-8jN5VN-aWRUWa-We5B2X-84qdbZ-7YHDoU-bov92M-7WbsUZ-WaJSs5-7WTdUj-7VF44h-8fveyT-7YtRSz-bsFvAa-83UUjF-7W4cYq-8fNm9s-VQs1PS-dzTo6Z-7UvPFS-aPWCug-V9iEnE-8cGems">here</a></p>
+    </div>
+
+  </body>
+</html>

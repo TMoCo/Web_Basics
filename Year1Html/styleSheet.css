@@ -1,0 +1,286 @@
+
+body {
+  font-family: georgia, serif;
+  background-color: aliceblue;
+  font-size: 150%;
+  color: #1d1d1d;
+  font-style: normal;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  max-height: 100%;
+}
+
+h1 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #800000;
+  color: white;
+  font-size: 400%;
+  font-weight: 400;
+  text-align: center;
+  text-overflow: clip;
+  letter-spacing: 20px;
+  text-decoration: underline;
+  min-height: 300px;
+  margin: 0;
+}
+
+h1.MHeaderWelcome {
+  background-image: url("Marseille.jpg");
+}
+
+h1.MHeaderAboutMe {
+  background-image: url("StarWars.jpg");
+}
+
+h1.MHeaderBefLeeds {
+  background-image: url("calanques.jpg");
+}
+
+h1.MHeaderArrivingAtLeeds {
+  background-image: url("LeedsUni.jpg");
+  color: #800000;
+}
+
+h1.MHeaderCSUni {
+  background-image: url("optical.jpg");
+}
+
+h1.MHeaderFuture {
+  background-image: url("ny.jpg");
+}
+
+h2.ContactHead {
+  padding-left: 3%;
+  padding-top: 1% ;
+  color: white;
+  text-decoration: underline;
+  font-weight: bold;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  opacity: 0.6;
+  transition: opacity 2s;
+  max-width: 100%;
+  min-width: 40%;
+  text-align: left;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-top: 30px;
+  font-size: 200%
+}
+
+h3:hover {
+  opacity: 1;
+}
+
+div.iframe {
+
+  margin: auto;
+  width: 300px;
+  height: 150px;
+}
+
+div.Contact {
+  bottom: 0px;
+  background-color: #669999;
+  margin-top: 10%;
+  border-bottom: 100%;
+  height: 300px;
+}
+
+div.OuterMapOfHome {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+div.MapOfHome {
+  height:400px;
+  max-width: 100%;
+  font-size: 60%;
+}
+
+div.slideshow {
+  margin-left: 25%;
+  margin-right: 25%;
+  max-height: 1600px;
+  max-width: 1200px;
+  min-width: 300px;
+}
+
+div.slide {
+  max-width: 100%;
+  max-height: auto;
+  display: none;
+}
+
+span.prev {
+  max-width: 40%;
+}
+
+span.next {
+  max-width: 40%;
+}
+
+button.prev {
+  height: auto;
+  width: 40%;
+  margin-right: 18%;
+}
+
+button.next {
+  width: 40%;
+  height: auto;
+}
+
+img.ProfilePic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-radius: 50%;
+    filter: sepia(100%);
+
+    transition: filter 1s;
+}
+
+img.ProfilePic:hover {
+  filter: sepia(0%);
+}
+
+img.move {
+  max-width: 100%;
+  max-height:auto;
+}
+
+ul {
+  margin: 0;
+  padding-bottom: 20px;
+}
+
+ul.NavBar {
+  list-style-type: none;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #669999;
+  overflow: hidden;
+
+}
+
+li.NavLi {
+  float: left;
+  min-width: 10%;
+
+}
+
+li.NavLi a {
+  display: block;
+  transition: color 2s;
+  color: white;
+  transition: background-color 1s;
+  text-align: center;
+  padding: 15px 10px;
+  text-decoration: none;
+}
+
+li.NavLi a:hover {
+  background-color: #1e2f2f;
+}
+
+li.NavLi a.active {
+  background-color: #00ccff;
+}
+
+li.Contacts {
+
+}
+
+p.Content::first-letter {
+  font-size: 250%;
+  font-weight: bold;
+  color: #006699;
+  text-transform: capitalize;
+}
+
+p.Cheers {
+  text-align: center;
+  color: black;
+  animation-name: colouredCheers;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+p {
+  opacity: 0.6;
+  transition: opacity 2s;
+  padding-left: 20%;
+  padding-right: 20%;
+  line-height: normal;
+  max-width: 100%;
+  min-width: 40%;
+  text-align: left;
+}
+
+p:hover {
+  opacity: 1;
+}
+
+p.ContactDetails {
+  text-align: left;
+  padding-left: 10px;
+  margin: 0;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin: auto;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+@media screen and (max-width: 1290px) {
+  ul.NavBar li.NavLi {
+    float: none;
+  }
+  h1 {
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #800000;
+    color: white;
+    font-size: 150%;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 20px;
+    text-decoration: underline;
+    min-height: 300px;
+    margin: 0;
+  }
+}
+
+@keyframes colouredCheers {
+  10% { color: red }
+  20% { color: black }
+  30% { color: red }
+  40% { color: black }
+  50% { color: red }
+  60% { color: black }
+  70% { color: red }
+  80% { color: black }
+  90% { color: red }
+  100% { color: black }
+}
